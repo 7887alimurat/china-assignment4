@@ -1,0 +1,199 @@
+/* =====================================================
+   PART 1 - MEDIA QUERIES (no Bootstrap on these pages)
+   Used by: typography.html (Task 1) and card-group.html (Task 2)
+
+   Mobile-first approach. Breakpoints:
+     mobile  : below 600px      (default styles)
+     tablet  : 600px - 1023px   (@media min-width: 600px)
+     desktop : 1024px and up    (@media min-width: 1024px)
+   ===================================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f6f0e5;
+    color: #2b2926;
+    line-height: 1.6;
+}
+
+/* ---------- shared header / footer ---------- */
+.top-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 14px 5%;
+    background-color: #711414;
+}
+
+.top-bar a {
+    color: #fffaf1;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.top-bar a:hover,
+.top-bar a:focus-visible {
+    text-decoration: underline;
+}
+
+.page-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 24px 5% 40px;
+}
+
+.footer {
+    padding: 22px 5%;
+    background-color: #711414;
+    color: #fffaf1;
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* ---------- TASK 1: RESPONSIVE TYPOGRAPHY ----------
+   Font sizes are stored in CSS variables, so every media query
+   only has to change three numbers.                          */
+:root {
+    --size-h1: 1.75rem;      /* mobile: 28px  */
+    --size-h2: 1.3rem;       /* mobile: 20.8px */
+    --size-p: 1rem;          /* mobile: 16px  */
+}
+
+h1 {
+    font-size: var(--size-h1);
+    line-height: 1.15;
+    color: #8b1919;
+    margin: 10px 0 16px;
+}
+
+h2 {
+    font-size: var(--size-h2);
+    color: #8b1919;
+    margin: 28px 0 8px;
+    border-left: 5px solid #d5a72c;
+    padding-left: 10px;
+}
+
+p {
+    font-size: var(--size-p);
+}
+
+/* current breakpoint label (its text is changed by media queries) */
+.breakpoint {
+    display: inline-block;
+    padding: 8px 14px;
+    background-color: #d5a72c;
+    color: #3a211a;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.breakpoint::after {
+    content: "Mobile (below 600px)";
+}
+
+.table-scroll {
+    overflow-x: auto;   /* table scrolls inside its box on narrow screens */
+}
+
+.size-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+.size-table th {
+    background-color: #8b1919;
+    color: white;
+    text-align: left;
+}
+
+.size-table th,
+.size-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* ---------- TASK 2: CARD GROUP ----------
+   .cards is a wrapping flex container. Only the card width changes:
+     mobile  -> 100%   (stacked)
+     tablet  -> 50%    (two in a row)
+     desktop -> 33.3%  (three in a row)                           */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 24px;
+}
+
+.info-card {
+    flex: 0 0 100%;
+    background-color: white;
+    border: 1px solid #eadfca;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.info-card img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+}
+
+.info-card .card-text {
+    padding: 18px;
+}
+
+.info-card h3 {
+    margin: 0 0 8px;
+    color: #711414;
+}
+
+.info-card p {
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+/* ---------- TABLET: 600px - 1023px ---------- */
+@media (min-width: 600px) {
+    :root {
+        --size-h1: 2.4rem;   /* 38.4px */
+        --size-h2: 1.6rem;   /* 25.6px */
+        --size-p: 1.125rem;  /* 18px   */
+    }
+
+    .breakpoint::after {
+        content: "Tablet (600px - 1023px)";
+    }
+
+    .info-card {
+        flex-basis: calc(50% - 12px);   /* two cards per row */
+    }
+}
+
+/* ---------- DESKTOP: 1024px and up ---------- */
+@media (min-width: 1024px) {
+    :root {
+        --size-h1: 3.4rem;   /* 54.4px */
+        --size-h2: 2rem;     /* 32px   */
+        --size-p: 1.25rem;   /* 20px   */
+    }
+
+    .breakpoint::after {
+        content: "Desktop (1024px and up)";
+    }
+
+    .info-card {
+        flex-basis: calc((100% - 48px) / 3);   /* three cards per row */
+    }
+}

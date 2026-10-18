@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2: Card Group</title>
+    <link rel="stylesheet" href="css/media-queries.css">
+</head>
+<body>
+    <header class="top-bar">
+        <a href="index.html">&larr; Discover China</a>
+        <nav aria-label="Part 1 pages">
+            <a href="typography.html">Task 1: Typography</a> &nbsp;|&nbsp;
+            <a href="card-group.html">Task 2: Card group</a>
+        </nav>
+    </header>
+
+    <main class="page-content">
+        <h1>Card Group with Media Queries</h1>
+        <p>Only CSS media queries are used here (no Bootstrap). Desktop: three cards in a row. Tablet: two cards in a row. Mobile: cards are stacked.</p>
+        <p class="breakpoint" role="status">Current breakpoint: </p>
+        <section class="cards" aria-label="Three cards">
+            <article class="info-card">
+                <img src="images/cards/tourism.jpg" alt="Autumn hills seen from the Great Wall">
+                <div class="card-text">
+                    <h3>Tourism</h3>
+                    <p>Plan your trip: why to visit, the most popular cities and the best time of year to go.</p>
+                </div>
+            </article>
+            <article class="info-card">
+                <img src="images/cards/attractions.jpg" alt="Stone watchtower on the Great Wall">
+                <div class="card-text">
+                    <h3>Attractions</h3>
+                    <p>From the Great Wall to the Forbidden City, see the places that define a visit to China.</p>
+                </div>
+            </article>
+            <article class="info-card">
+                <img src="images/cards/culture.jpg" alt="Roof of an imperial hall in the Forbidden City">
+                <div class="card-text">
+                    <h3>Culture</h3>
+                    <p>Festivals, tea, calligraphy and the philosophies that shape everyday life.</p>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Created by: Alan &amp; Alimurat</p>
+    </footer>
+</body>
+</html>

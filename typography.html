@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1: Responsive Typography</title>
+    <link rel="stylesheet" href="css/media-queries.css">
+</head>
+<body>
+    <header class="top-bar">
+        <a href="index.html">&larr; Discover China</a>
+        <nav aria-label="Part 1 pages">
+            <a href="typography.html">Task 1: Typography</a> &nbsp;|&nbsp;
+            <a href="card-group.html">Task 2: Card group</a>
+        </nav>
+    </header>
+
+    <main class="page-content">
+        <p class="breakpoint" role="status">Current breakpoint: </p>
+        <h1>Responsive Typography: Tea in China</h1>
+        <p>Resize the browser window. The headings and paragraphs change their font size on mobile, tablet and desktop screens with CSS media queries.</p>
+
+        <h2>Where tea began</h2>
+        <p>Tea has been grown in China for thousands of years. According to legend, Emperor Shennong discovered tea when leaves fell into his boiling water. Later, tea became part of daily life, poetry and ceremonies.</p>
+
+        <h2>Main types of Chinese tea</h2>
+        <p>Chinese tea is usually divided into green, black, white, yellow, oolong and dark tea. The type depends on how the leaves are processed after picking.</p>
+
+        <h2>Font sizes used on this page</h2>
+        <div class="table-scroll">
+        <table class="size-table">
+            <caption class="visually-hidden">Font sizes for each screen size</caption>
+            <thead><tr><th scope="col">Screen</th><th scope="col">Width</th><th scope="col">h1</th><th scope="col">h2</th><th scope="col">Paragraph</th></tr></thead>
+            <tbody>
+                <tr><td>Mobile</td><td>below 600px</td><td>28px</td><td>20.8px</td><td>16px</td></tr>
+                <tr><td>Tablet</td><td>600px - 1023px</td><td>38.4px</td><td>25.6px</td><td>18px</td></tr>
+                <tr><td>Desktop</td><td>1024px and up</td><td>54.4px</td><td>32px</td><td>20px</td></tr>
+            </tbody>
+        </table>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>Created by: Alan &amp; Alimurat</p>
+    </footer>
+</body>
+</html>

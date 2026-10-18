@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Famous attractions in China: Great Wall, Forbidden City and more.">
+    <title>Attractions in China</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="d-flex flex-column min-vh-100" id="top">
+    <a class="visually-hidden-focusable btn btn-warning m-2 position-absolute" href="#main">Skip to main content</a>
+
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary" aria-label="Main navigation">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center gap-2 fw-bold" href="index.html">
+                    <img src="images/china-tourism.jpg" alt="China website logo" width="48" height="48"
+                         class="rounded-circle border border-2 border-warning object-fit-cover">
+                    <span>Discover China</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu"
+                        aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainMenu">
+                    <ul class="navbar-nav ms-auto gap-lg-1 mt-2 mt-lg-0">
+                        <li class="nav-item"><a class="nav-link fw-bold rounded px-lg-3" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link fw-bold rounded px-lg-3" href="tourism.html">Tourism</a></li>
+                        <li class="nav-item"><a class="nav-link fw-bold rounded px-lg-3 active" aria-current="page" href="attraction.html">Attractions</a></li>
+                        <li class="nav-item"><a class="nav-link fw-bold rounded px-lg-3" href="culture.html">Culture</a></li>
+                        <li class="nav-item"><a class="nav-link fw-bold rounded px-lg-3" href="history.html">History</a></li>
+                        <li class="nav-item"><a class="nav-link fw-bold rounded px-lg-3" href="faq.html">FAQ</a></li>
+                        <li class="nav-item"><a class="nav-link fw-bold rounded px-lg-3" href="register.html">Register</a></li>
+                        <li class="nav-item ms-lg-2 mt-2 mt-lg-0"><button type="button" class="btn btn-warning fw-bold" data-open-popup>Subscribe</button></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container flex-grow-1">
+        <div class="row px-2 px-sm-2 gx-lg-5">
+            <main id="main" class="col-lg-9 order-lg-2" tabindex="-1">
+                <section class="row align-items-center g-4 g-lg-5 py-4 py-lg-5 mt-lg-4">
+                    <div class="col-12 col-lg-6 order-lg-2">
+                        <span class="badge bg-warning text-dark fs-6 fw-bold text-uppercase mb-3">Discover China</span>
+                        <h1 class="display-4 fw-bold text-primary mb-3">Attractions in China</h1>
+                        <p class="lead">China has many famous attractions. Tourists can visit historical places, temples, mountains and modern cities.</p>
+                        <div class="d-flex flex-wrap gap-2">
+                            <a href="#places" class="btn btn-primary btn-lg">Explore Attractions</a>
+                            <a href="#gallery" class="btn btn-outline-dark btn-lg">Photo Carousel</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <img src="images/great-wall.jpg" alt="Great Wall of China" class="photo-frame rounded">
+                    </div>
+                </section>
+                <div id="places">
+                    <div class="row align-items-center g-4 my-4 my-lg-5">
+                        <div class="col-12 col-lg-6">
+                            <p class="display-5 fw-bold text-warning-emphasis mb-0">01</p>
+                            <h2 class="h2 text-primary border-start border-4 border-warning ps-3 mb-3">Great Wall of China</h2>
+                            <p>The Great Wall of China is one of the most famous attractions in the country. It was built over many centuries and today millions of tourists visit it.</p>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <img src="images/great-wall.jpg" alt="Great Wall of China" class="photo-frame rounded">
+                        </div>
+                    </div>
+                    <div class="row align-items-center g-4 my-4 my-lg-5">
+                        <div class="col-12 col-lg-6 order-lg-2">
+                            <p class="display-5 fw-bold text-warning-emphasis mb-0">02</p>
+                            <h2 class="h2 text-primary border-start border-4 border-warning ps-3 mb-3">Forbidden City</h2>
+                            <p>The Forbidden City is located in Beijing. It was the imperial palace of Chinese emperors for hundreds of years.</p>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <img src="images/forbidden-city.jpg" alt="Forbidden City in Beijing" class="photo-frame rounded">
+                        </div>
+                    </div>
+                </div>
+
+                <h2 id="other" class="h2 text-primary border-start border-4 border-warning ps-3 mt-5 mb-3">Other Popular Attractions</h2>
+                <ul class="list-group shadow-sm mb-4">
+                    <li class="list-group-item">Terracotta Army</li>
+                    <li class="list-group-item">Zhangjiajie National Forest Park</li>
+                    <li class="list-group-item">Temple of Heaven</li>
+                    <li class="list-group-item">West Lake</li>
+                </ul>
+
+                <h2 id="table" class="h2 text-primary border-start border-4 border-warning ps-3 mt-5 mb-3">Attractions Table</h2>
+                <div class="table-responsive rounded shadow-sm mb-4">
+                    <table class="table table-striped table-hover align-middle mb-0">
+                        <caption class="visually-hidden">Popular attractions in China</caption>
+                        <thead class="table-dark"><tr><th scope="col">Attraction</th><th scope="col">Location</th><th scope="col">Type</th></tr></thead>
+                        <tbody>
+                            <tr><th scope="row">Great Wall</th><td>Beijing area</td><td>Historical</td></tr>
+                            <tr><th scope="row">Forbidden City</th><td>Beijing</td><td>Historical</td></tr>
+                            <tr><th scope="row">Terracotta Army</th><td>Xi'an</td><td>Historical</td></tr>
+                            <tr><th scope="row">Zhangjiajie</th><td>Hunan</td><td>Nature</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h2 id="gallery" class="h2 text-primary border-start border-4 border-warning ps-3 mt-5 mb-3">Photo Gallery</h2>
+                <p>Nine photos from the Great Wall and the Forbidden City. Use the arrows, the round indicators or the keyboard to browse them.</p>
+                <div id="chinaCarousel" class="carousel slide shadow rounded overflow-hidden" aria-roledescription="carousel" aria-label="Photos of the Great Wall and the Forbidden City">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#chinaCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#chinaCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#chinaCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#chinaCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#chinaCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                        <button type="button" data-bs-target="#chinaCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                        <button type="button" data-bs-target="#chinaCarousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                        <button type="button" data-bs-target="#chinaCarousel" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                        <button type="button" data-bs-target="#chinaCarousel" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/gallery/g1.jpg" class="d-block w-100" alt="Watchtower on the Great Wall">
+                            <div class="carousel-caption rounded bg-dark bg-opacity-75 py-2">
+                                <h3 class="h5 mb-0">Watchtower</h3>
+                                <p class="d-none d-md-block small mb-0">A stone tower rising above the ridge</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/gallery/g2.jpg" class="d-block w-100" alt="Autumn foliage below the Great Wall">
+                            <div class="carousel-caption rounded bg-dark bg-opacity-75 py-2">
+                                <h3 class="h5 mb-0">Autumn slopes</h3>
+                                <p class="d-none d-md-block small mb-0">Red and gold trees under the wall</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/gallery/g3.jpg" class="d-block w-100" alt="Paved walkway on the Great Wall">
+                            <div class="carousel-caption rounded bg-dark bg-opacity-75 py-2">
+                                <h3 class="h5 mb-0">Wall walkway</h3>
+                                <p class="d-none d-md-block small mb-0">A stone path following the ridge</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/gallery/g4.jpg" class="d-block w-100" alt="Mountain ridges fading into haze">
+                            <div class="carousel-caption rounded bg-dark bg-opacity-75 py-2">
+                                <h3 class="h5 mb-0">Mountain ridges</h3>
+                                <p class="d-none d-md-block small mb-0">Layers of hills in the morning haze</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/gallery/g5.jpg" class="d-block w-100" alt="Battlements of the Great Wall">
+                            <div class="carousel-caption rounded bg-dark bg-opacity-75 py-2">
+                                <h3 class="h5 mb-0">Battlements</h3>
+                                <p class="d-none d-md-block small mb-0">The crenellated parapet up close</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/gallery/g6.jpg" class="d-block w-100" alt="Double-eaved roof of a Forbidden City hall">
+                            <div class="carousel-caption rounded bg-dark bg-opacity-75 py-2">
+                                <h3 class="h5 mb-0">Imperial roof</h3>
+                                <p class="d-none d-md-block small mb-0">Double-eaved roof of a palace hall</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/gallery/g7.jpg" class="d-block w-100" alt="Red columns and painted eaves of a Forbidden City hall">
+                            <div class="carousel-caption rounded bg-dark bg-opacity-75 py-2">
+                                <h3 class="h5 mb-0">Red columns</h3>
+                                <p class="d-none d-md-block small mb-0">Painted eaves above red pillars</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/gallery/g8.jpg" class="d-block w-100" alt="Marble stairway leading to a Forbidden City hall">
+                            <div class="carousel-caption rounded bg-dark bg-opacity-75 py-2">
+                                <h3 class="h5 mb-0">Marble stairway</h3>
+                                <p class="d-none d-md-block small mb-0">Steps that lead up to the hall</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/gallery/g9.jpg" class="d-block w-100" alt="Visitors crossing a Forbidden City courtyard">
+                            <div class="carousel-caption rounded bg-dark bg-opacity-75 py-2">
+                                <h3 class="h5 mb-0">Palace courtyard</h3>
+                                <p class="d-none d-md-block small mb-0">Visitors and a small red pavilion</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#chinaCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous photo</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#chinaCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next photo</span>
+                    </button>
+                </div>
+
+                <section id="explore" class="mt-5">
+                    <h2 class="h2 text-primary border-start border-4 border-warning ps-3 mb-3">Keep Exploring</h2>
+                    <p>Continue your journey through China with another part of the website.</p>
+                    <div class="row g-4">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <article class="card h-100 shadow-sm card-lift">
+                                <img src="images/cards/tourism.jpg" class="card-img-top" alt="Autumn hills seen from the Great Wall">
+                                <div class="card-body">
+                                    <h3 class="card-title h5 text-primary">Tourism</h3>
+                                    <p class="card-text">Plan your trip: why to visit, the most popular cities and the best time of year to go.</p>
+                                </div>
+                                <div class="card-footer bg-transparent border-0 pb-3">
+                                    <a href="tourism.html" class="btn btn-primary btn-sm">Plan your trip</a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <article class="card h-100 shadow-sm card-lift">
+                                <img src="images/cards/culture.jpg" class="card-img-top" alt="Roof of an imperial hall in the Forbidden City">
+                                <div class="card-body">
+                                    <h3 class="card-title h5 text-primary">Culture</h3>
+                                    <p class="card-text">Festivals, tea, calligraphy and the philosophies that shape everyday life.</p>
+                                </div>
+                                <div class="card-footer bg-transparent border-0 pb-3">
+                                    <a href="culture.html" class="btn btn-primary btn-sm">Discover culture</a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <article class="card h-100 shadow-sm card-lift">
+                                <img src="images/cards/history.jpg" class="card-img-top" alt="Paved walkway along the Great Wall">
+                                <div class="card-body">
+                                    <h3 class="card-title h5 text-primary">History</h3>
+                                    <p class="card-text">Follow the dynasties from Qin to Qing and the monuments they left behind.</p>
+                                </div>
+                                <div class="card-footer bg-transparent border-0 pb-3">
+                                    <a href="history.html" class="btn btn-primary btn-sm">Read the history</a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="team" class="mt-5 mb-4">
+                    <div class="card border-0 border-start border-4 border-warning shadow-sm">
+                        <div class="card-body p-3 p-lg-4">
+                            <h2 class="h3 text-primary card-title">About the Team Members</h2>
+                            <p class="card-text mb-0">Alan and Alimurat created this website project and worked with HTML structure, links, images, tables and CSS styling. In Assignment 2 they added Flexbox and CSS Grid layouts, and in Assignment 3 they made the site responsive with media queries and Bootstrap 5.</p>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <aside class="col-lg-3 order-lg-1 mt-2 mt-lg-5 mb-4" aria-label="Sidebar">
+                <div class="sticky-lg-top side-sticky">
+                    <div class="card border-0 border-start border-4 border-warning shadow-sm mb-3 mb-lg-4">
+                        <div class="card-body p-3 p-lg-4">
+                            <h2 class="h5 text-primary card-title">On This Page</h2>
+                            <div class="list-group list-group-flush">
+                                <a class="list-group-item list-group-item-action text-primary fw-bold" href="#places">Top Attractions</a>
+                                <a class="list-group-item list-group-item-action text-primary fw-bold" href="#other">Other Attractions</a>
+                                <a class="list-group-item list-group-item-action text-primary fw-bold" href="#table">Attractions Table</a>
+                                <a class="list-group-item list-group-item-action text-primary fw-bold" href="#gallery">Photo Gallery</a>
+                                <a class="list-group-item list-group-item-action text-primary fw-bold" href="#explore">Keep Exploring</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card border-0 border-start border-4 border-warning shadow-sm">
+                        <div class="card-body p-3 p-lg-4">
+                            <h2 class="h5 text-primary card-title">Quick Facts</h2>
+                            <dl class="mb-0">
+                                <dt class="small text-body-secondary">Capital</dt><dd class="fw-bold">Beijing</dd>
+                                <dt class="small text-body-secondary">Official language</dt><dd class="fw-bold">Mandarin Chinese</dd>
+                                <dt class="small text-body-secondary">Population</dt><dd class="fw-bold">About 1.4 billion</dd>
+                                <dt class="small text-body-secondary">Area</dt><dd class="fw-bold mb-0">About 9.6 million km&sup2;</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <!-- Task 3: popup subscription form (hidden by default) -->
+    <div class="popup-overlay" id="popupOverlay" role="dialog" aria-modal="true" aria-labelledby="popupTitle">
+        <div class="popup-window card border-0 shadow-lg">
+            <div class="card-body p-4">
+                <button type="button" class="btn-close popup-close" id="popupClose" aria-label="Close"></button>
+                <h2 id="popupTitle" class="h4 text-primary mb-3">Subscribe to China travel news</h2>
+                <form id="subscribeForm" novalidate>
+                    <div class="mb-3">
+                        <label for="subName" class="form-label fw-bold">Name</label>
+                        <input type="text" class="form-control" id="subName" placeholder="Your name" autocomplete="name">
+                        <div class="invalid-feedback" id="subName-error"></div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="subEmail" class="form-label fw-bold">Email</label>
+                        <input type="email" class="form-control" id="subEmail" placeholder="name@example.com" autocomplete="email">
+                        <div class="invalid-feedback" id="subEmail-error"></div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                    <div class="alert alert-success d-none mt-3 mb-0" id="subSuccess" role="status"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-primary text-white mt-auto py-4">
+        <div class="container d-flex flex-wrap justify-content-between align-items-center gap-3">
+            <p class="mb-0">Created by: Alan &amp; Alimurat</p>
+            <p class="mb-0 small">
+                Part 1 demos:
+                <a class="link-light" href="typography.html">Responsive typography</a> |
+                <a class="link-light" href="card-group.html">Card group</a>
+            </p>
+            <div class="text-lg-center">
+                <p class="mb-2 small"><span class="fw-bold">Date and time:</span> <span id="datetime" aria-live="off"></span></p>
+                <button type="button" class="btn btn-outline-light btn-sm" id="colorBtn">Change background color</button>
+            </div>
+            <a href="#top" class="btn btn-warning btn-sm">Back to top</a>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bgcolor.js"></script>
+    <script src="js/datetime.js"></script>
+    <script src="js/popup.js"></script>
+</body>
+</html>
